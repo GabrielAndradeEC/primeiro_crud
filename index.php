@@ -3,33 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Cadastro</a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+    <nav>
+    <div class="menu">
+        <a class="logo"> Página de cadastro</a>
+        <div>
+        <ul>
+            <li class="">
+            <a class="menuitem" id="home" aria-current="page" href="index.php">Home</a>
             </li>
-            <li class="nav-item">
-            <a class="nav-link" href="?page=novo">Novo usuário</a>
+            <li class="">
+            <a class="menuitem" href="?page=novo">Novo usuário</a>
             </li>
-            <li class="nav-item">
-            <a class="nav-link" href="?page=listar">Listar usuários</a>
+            <li class="">
+            <a class="menuitem" href="?page=listar">Listar usuários</a>
             </li>
         </ul>
         </div>
     </div>
     </nav>
 
-   <div class="container">
-        <div class="row">
-            <div class="col mt-5">
+   <div>
+        <div>
+            <div class="">
                <?php
                 include("config.php");
                 switch(@$_REQUEST["page"]){
@@ -53,8 +53,6 @@
             </div>
         </div>
    </div>
-
-    <script scr="js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
