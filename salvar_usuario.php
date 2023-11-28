@@ -30,7 +30,7 @@
                         senha='{$senha}',
                         data_nasc='{$data_nasc}'
                     WHERE
-                        id=".$_REQUEST["id"];
+                        id='{$_REQUEST["id"]}'";
 
             $res = $conn->query($sql);
 
